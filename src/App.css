@@ -1,0 +1,111 @@
+.App {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-3 {
+  background-color: white;
+  margin: 10px;
+  /* height: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.col-md-3 button {
+  display: none;
+}
+
+.col-md-3:hover button {
+  display: block;
+}
+
+.box {
+  /* padding: 10px;
+  margin: 10px; */
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beds {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.beds img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border: 1px solid green;
+}
+
+.userform {
+  margin: 20px;
+
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  /* height: 90vh; */
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width : 767px) {
+  .box {
+    height: 80px;
+    width: 80px;
+  }
+
+  .main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width : 1023px) and (min-width:767px) {
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+
+  .main {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width : 1300px) and (min-width:1024px) {
+  .box {
+    height: 250px;
+    width: 250px;
+  }
+
+  .main {
+    width: 70%;
+  }
+}
